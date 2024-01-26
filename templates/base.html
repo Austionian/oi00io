@@ -1,12 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="{{ get_url(path="styles/styles.css") | safe }}" />
     <title>oi00io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A personal site/blog about software engineering, rust programming, rust web development and philosophy. r00ks. by austin rooks."
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fefefe"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="rgba(2, 6, 23, 0.8)"
+    />
+    <link rel="stylesheet" href="{{ get_url(path="styles/styles.css") | safe }}" />
   </head>
-
-  <body>
+  <body class="bg-primary-50/10 dark:bg-primary-950/80 dark:text-gray-100 leading-relaxed">
     <section class="section">
       <div class="container">{% block content %} {% endblock %}</div>
     </section>
