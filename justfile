@@ -11,6 +11,8 @@ dev:
     # Add a trap to run the minify function before exiting
     trap "minify; kill 0" SIGINT
 
+    open 'http://127.0.0.1:1111'
+
     zola serve & just run-tailwind
     TAILWIND_PID=$!
 
